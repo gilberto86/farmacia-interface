@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" >
+	<head>
+		<meta charset="UTF-8"/>
+		
+		<title>Funcionários</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+
+	
+		
+		
+	</head>
+	<body>
+		<a href="#cadfun"></a>
+	<a name="cadfun"></a>
+
+		<div class="container">
+		
+			<div class="nav-top clearfix">
+				
+			</div>
+
+			<div class="header">
+				<h1><img  src="logo.png" alt="logoUniDrogas"/></h1>
+			</div>
+
+			<div class="menu">
+				<a class="botao-menu" href="index.html">Pagina Inicial</a>
+				<a class="botao-menu" href="funcionario.html">Funcionarios</a>
+				<a class="botao-menu" href="produto.html">Produtos</a>
+				<a class="botao-menu" href="fornecedor.html">Fornecedores</a>
+				<a class="botao-menu" href="login.html">Sair</a>
+
+			</div>
+		
+			<nav id="main">
+
+<form id="form" method="post">
+<fieldset id="usuário"><legend> <b>Cadastro de Funcionário (Preencha todos os campos): </b></legend>
+	<p><label for="cnome">Nome:</label></p>
+		<input type="text" class="textbox" name="tnome" id="cnome" placeholder="Nome completo" autofocus/>
+		
+		<p><label for="csenha"  class="lbl">Senha:</label></p>
+		<input type="password" class="textbox" name="tsenha" id="csenha" placeholder="8 dígitos">
+		
+		<p><label for="cmail"  class="lbl">E-mail:</label></p>
+		<input type="email" class="textbox" name="tmail" id="cmail" placeholder="exemplo@gmail.com"/>
+		
+           <p><label for="ctel"  class="lbl">Telefone:</label></p>
+		<input type="tel" class="textbox" name="ttel" id="ctel" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3-4}$" placeholder="(xx) xxxxx-xxxx" title="Formato: (xx) xxxxx-xxxx"/>
+		
+		
+
+		<p><label for="cnasc">Data de Nascimento:</label></p>
+                                   <input type="date" class="textbox" name="tnasc" id="cnasc"/></p>
+		
+		
+			
+		<legend> Selecione o sexo:</legend>
+	                <input type="radio" name="tsexo" value="cmasc" checked/>M<br>
+                    <input type="radio" name="tsexo" value="cfem"/>F<br>
+
+		
+		<input class="btn" type="submit" value = "Gravar" onClick="alert('Cadastro realizado com sucesso!'); return true"/>
+		<p><input class="btn" type="reset" value = "Limpar Campos"/></p>
+		
+		
+		
+		
+		
+
+</form>
+	        	
+	        
+	      	</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" >
+	<head>
+		<meta charset="UTF-8"/>
+		
+		<title>Produtos</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+
+	
+		
+		
+	</head>
+	<body>
+		<a href="#cadprod"></a>
+	<a name="cadprod"></a>
+		<div class="container">
+			
+			<div class="nav-top clearfix">
+				
+			</div>
+
+			<div class="header">
+				<h1><img  src="logo.png" alt="logoUniDrogas"/></h1>	
+			</div>
+
+			<div class="menu">
+				<a class="botao-menu" href="index.html">Pagina Inicial</a>
+				<a class="botao-menu" href="funcionario.html">Funcionarios</a>
+				<a class="botao-menu" href="produto.html">Produtos</a>
+				<a class="botao-menu" href="fornecedor.html">Fornecedores</a>
+				<a class="botao-menu" href="login.html">Sair</a>
+
+			</div>
+		
+			<nav id="main">
+
+<form id="form" method="post">
+<fieldset id="usuário"><legend><b>Cadastro de Produto (Preencha todos os campos):</b> </legend>
+	<p><label for="cnome">Nome do Produto:</label></p>
+		 <input type="text" class="textbox" name="tnome" id="cnome" autofocus/>
+		
+		
+		<p><label for="cvalor">Valor Corrente:</label></p>
+		 <input type="text" class="textbox" name="tvalor" id="cvalor"  placeholder="Ex : 25,00"/>
+		
+		
+		<p><label for="cfabricante">Fornecedor:</label></p>
+		 <input type="text" class="textbox" name="tfabri" id="cfabri" placeholder="Digite um fornecedor válido"/>
+		
+		<p><label for="creceita">Receita:</label></p>
+		
+	               <select size="1" name="D1">
+
+<option selected value="Selecione">Selecione o tipo da receita</option>
+
+<option value="a1">A1</option>
+
+<option value="a2">A2</option>
+
+<option value="a3">A3</option>
+
+<option value="b1">B1</option>
+
+<option value="b2">B2</option>
+
+<option value="c1">C1</option>
+
+<option value="c2">C2</option>
+
+<option value="c3">C3</option>
+
+<option value="c4">C4</option>
+
+<option value="c5">C5</option>
+
+<option value="c6">C6</option>
+</select>
+		
+		
+		<p><label for="cestoque">Quantidade em estoque:</label></p>
+		<input type="text" class="textbox" name="testoque" id="cestoque"/>
+		
+		<p><label for="ctipo">Tipo:</label></p>
+		<select size="1" name="D2">
+
+<option selected value="Selecione">Selecione o tipo</option>
+
+<option value="ref">Referência</option>
+
+<option value="sim">Similar</option>
+
+<option value="gen">Genérico</option>
+
+</select></p>
+		
+		<p><label for="cpa">Princípio Ativo</label></p>
+		 <input type="text" class="textbox" name="tpa" id="cpa"/>
+		<br>
+		
+		
+			
+		</p>
+		
+		
+		<input class="btn" type="submit" value = "Gravar" onClick="alert('Cadastro realizado com sucesso!'); return true"/>
+		<p><input class="btn" type="reset" value = "Limpar Campos"/><p/>
+		
+		
+		
+		
+		
+		
+
+</form>
+	        	
+	        
+	      	</div>
+		</div>
+	</body>
+</html>

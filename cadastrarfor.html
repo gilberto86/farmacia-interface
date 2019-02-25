@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" >
+	<head>
+		<meta charset="UTF-8"/>
+		
+		<title>Fornecedores</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+
+		
+		
+		
+	</head>
+	<body>
+		
+		<a href="#cadfor"></a>
+	<a name="cadfor"></a>
+
+		<div class="container">
+		
+			<div class="nav-top clearfix">
+				
+			</div>
+
+			<div class="header">
+				<h1><img  src="logo.png" alt="logoUniDrogas"/></h1>
+			</div>
+
+			<div class="menu">
+				<a class="botao-menu" href="index.html">Pagina Inicial</a>
+				<a class="botao-menu" href="funcionario.html">Funcionarios</a>
+				<a class="botao-menu" href="produto.html">Produtos</a>
+				<a class="botao-menu" href="fornecedor.html">Fornecedores</a>
+				<a class="botao-menu" href="login.html">Sair</a>
+
+			</div>
+		
+			<nav id="main">
+
+<form id="form" method="post">
+<fieldset id="usuário"><legend><b>Cadastro de Fornecedor (Preencha todos os campos):</b></legend>
+	<p><label for="ccnpj">CNPJ:</label></p>
+		<input type="text" class="textbox" name="tcnpj" id="ccnpj" placeholder="Ex.: 00.000.000/0000-00" autofocus/>
+		
+		<p><label for="crs">Razão Social:</label></p>
+		<input type="text" class="textbox" name="trs" id="crs" placeholder="">
+		
+		<p><label for="cfab">Fabricante:</label></p>
+		<input type="email" class="textbox" name="tfab" id="cfab" placeholder=""/>
+		
+         <p><label for="ctel"  class="lbl">Telefone:</label></p>
+		<input type="tel" class="textbox" name="ttel" id="ctel" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3-4}$" placeholder="(xx) xxxxx-xxxx" title="Formato: (xx) xxxxx-xxxx"/>
+		
+		
+		
+		<input class="btn" type="submit" value = "Gravar" onClick="alert('Cadastro realizado com sucesso!'); return true"/>
+		<p><input class="btn" type="reset" value = "Limpar Campos"/></p>
+		
+		
+
+</form>
+	        	
+	        
+	      	</div>
+		</div>
+	</body>
+</html>
